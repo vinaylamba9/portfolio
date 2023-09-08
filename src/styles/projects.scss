@@ -6,19 +6,20 @@
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
-    padding: 8rem;
+    padding: 5rem;
   }
   .projects {
-    margin-inline: 25rem;
+    margin-inline: 15dvw;
     padding-bottom: 5rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     .card {
       -moz-perspective: 120rem;
       perspective: 120rem;
-      width: 30%;
-      height: 35rem;
+      width: 28rem;
+      height: 30rem;
+      margin-right: 3rem;
       margin-bottom: 8rem;
       position: relative;
       cursor: pointer;
@@ -38,35 +39,66 @@
           .youtube_sync_project {
             position: relative;
             height: 42%;
-            background-image: linear-gradient(
-                to right bottom,
-                rgba(red, 0.5),
-                rgba(white, 0.2)
-              ),
-              url(../src/assets/images/yt_project.jpg);
             background-size: cover;
             background-position: top;
             background-repeat: no-repeat;
             clip-path: polygon(0 0, 100% 0, 100% 76%, 0 100%);
+            &.card-cover--1 {
+              background-image: linear-gradient(
+                  to right bottom,
+                  rgba(red, 0.3),
+                  rgba(white, 0.5)
+                ),
+                url(../src/assets/images/yt_project.jpg);
+            }
+            &.card-cover--2 {
+              background-image: url(../src/assets/images/timesheet.png);
+            }
+            &.card-cover--3 {
+              background-image: url(../src/assets/images/chat.jpg);
+            }
           }
           .card_heading {
             text-transform: uppercase;
             position: absolute;
-            top: 5.5rem;
+            top: 5.6rem;
             right: 1rem;
             line-height: 3.8rem;
             font-weight: 400;
             text-align: right;
             color: white;
             font-size: 2.8rem;
-            width: 55%;
-            & > span {
-              padding: 0rem 0.5rem;
-              background: linear-gradient(
-                to right bottom,
-                rgba(#dd0000, 0.85),
-                rgba(red, 0.85)
-              );
+            &.card-front--1 {
+              & > span {
+                padding-inline: 1rem;
+                background: linear-gradient(
+                  to right bottom,
+                  rgba(rgb(255, 51, 0), 0.85),
+                  rgba(139, 0, 0, 0.85)
+                );
+              }
+            }
+            &.card-front--2 {
+              top: 6rem;
+              & > span {
+                // padding-inline: 1rem;
+                background: linear-gradient(
+                  to right bottom,
+                  rgb(117, 160, 254),
+                  rgb(1, 160, 171)
+                );
+              }
+            }
+            &.card-front--3 {
+              top: 9.5rem;
+              & > span {
+                padding-inline: 1rem;
+                background: linear-gradient(
+                  to right bottom,
+                  rgb(163, 171, 186),
+                  rgb(23, 23, 23)
+                );
+              }
             }
           }
           .techonologies_section {
@@ -89,12 +121,28 @@
           }
         }
         &--back {
-          background-image: linear-gradient(
-            to right bottom,
-            rgb(133, 190, 255),
-            rgb(0, 136, 157)
-          );
           transform: rotateY(-180deg);
+          .card-back--1 {
+            background-image: linear-gradient(
+              to right bottom,
+              rgb(255, 109, 109),
+              rgb(158, 0, 0)
+            );
+          }
+          .card-back--2 {
+            background-image: linear-gradient(
+              to right bottom,
+              rgb(117, 160, 254),
+              rgb(1, 160, 171)
+            );
+          }
+          .card-back--3 {
+            background-image: linear-gradient(
+              to right bottom,
+              rgb(163, 171, 186),
+              rgb(23, 23, 23)
+            );
+          }
         }
       }
       &:hover .card__side--front {
@@ -103,6 +151,21 @@
       &:hover .card__side--back {
         transform: rotateY(0deg);
       }
+    }
+  }
+  .card-back-cta {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    & > h4 {
+      margin: 2rem 3rem;
+      line-height: 3rem;
+      font-weight: 400;
+      text-align: center;
+      font-size: 1.8rem;
+      color: white;
     }
   }
 }

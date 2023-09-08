@@ -1,6 +1,13 @@
 import React from 'react';
 
 const Header = () => {
+  const scrollToProjects = () => {
+    const projectSection = document.getElementById('projectSection');
+    if (projectSection) {
+      projectSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className='header'>
       <a
@@ -43,7 +50,9 @@ const Header = () => {
       <div className='heading'>
         <h1 className='main-heading'>Vinay Kumar</h1>
         <h2 className='sub-heading'>Full stack engineer</h2>
-        <a className='action-button'>See Projects</a>
+        <a onClick={scrollToProjects} className='action-button'>
+          See Projects
+        </a>
       </div>
     </header>
   );

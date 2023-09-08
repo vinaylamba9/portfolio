@@ -62,14 +62,16 @@ const About = () => {
           </div>
           <div className='about__me--card-body'>
             <h3>Hi :)</h3>
-            👋 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            sint, doloremque iusto assumenda adipisci blanditiis aspernatur
-            facere! Accusamus ratione voluptatibus molestiae fugit, officiis
-            veniam, eveniet vitae aliquid dolores neque illo! Quae tenetur sed
-            vero architecto mollitia consequuntur sint hic autem obcaecati
-            pariatur voluptatem distinctio, doloremque, officiis impedit porro
-            fuga, id nisi itaque doloribus maiores eum deserunt eveniet!
-            Reprehenderit, dolorum adipisci.
+            👋 I am a Software Engineer with <b>3+ years</b> of experience in
+            Product Development and Software Engineering in both Backend and
+            Frontend roles. I help companies build highly scalable and robust
+            products.
+            <br></br> I have contributed to open source projects, worked on
+            engineering teams, and always stay attuned to the newest frameworks.
+            <p>
+              I love connecting with new people so please reach out to me @ 📨
+              vinaylamba9@gmail.com
+            </p>
             <p>Thank you 💜</p>
           </div>
         </div>

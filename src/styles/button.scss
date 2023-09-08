@@ -1,0 +1,17 @@
+.project-button {
+  display: inline-block;
+  color: black;
+  font-size: 2rem;
+  padding: 1.5rem 4rem;
+  background-color: white;
+  border-radius: 100px;
+  cursor: pointer;
+  font-weight: 400;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 5px rgb(0, 0, 0, 0.6);
+  }
+  &:active {
+    transform: translateY(-1px);
+  }
+}

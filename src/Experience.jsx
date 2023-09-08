@@ -8,7 +8,13 @@ import './styles/experience.scss';
 import collegeIcon from './assets/images/uni60.png';
 import workIcon from './assets/images/work1.png';
 import hourGlass from './assets/images/hourglass32.png';
-import { EDUCATION_DETAILS, WORK_EXP_HERBALIFE } from './constant';
+import {
+  COURSES,
+  WORK_EXP_COGNIZANT,
+  WORK_EXP_HERBALIFE,
+  WORK_EXP_INTERN,
+} from './constant';
+import HighLight from './HighLight';
 
 const Experience = () => {
   return (
@@ -34,8 +40,13 @@ const Experience = () => {
           <h4 className='vertical-timeline-element-subtitle'>
             University at Buffalo, State University of New York
           </h4>
-          <p className='vertical-timeline-element-details'>
-            {EDUCATION_DETAILS}
+          <p className='vertical-timeline-element-details highlight-container'>
+            {/* {EDUCATION_DETAILS} */}
+
+            {/* <i>Courses: </i> */}
+            {COURSES.map((course, index) => (
+              <HighLight key={index} course={course} />
+            ))}
           </p>
         </VerticalTimelineElement>
 
@@ -53,15 +64,15 @@ const Experience = () => {
           icon={<img src={workIcon} style={{ height: '3.2rem' }} />}
         >
           <h3 className='vertical-timeline-element-title'>
-            UI Developer II @ Herbalife Nutrition
+            Software Engineer II @ Herbalife
           </h3>
           <h4 className='vertical-timeline-element-subtitle'></h4>
 
           <p className='vertical-timeline-element-details'>
-            {WORK_EXP_HERBALIFE.split('◦').map((line) => {
+            {WORK_EXP_HERBALIFE.split('•').map((line) => {
               return (
                 <span key={line} style={{ display: 'block' }}>
-                  {line}
+                  🔵 {line}
                 </span>
               );
             })}
@@ -82,21 +93,48 @@ const Experience = () => {
           icon={<img src={workIcon} style={{ height: '3.2rem' }} />}
         >
           <h3 className='vertical-timeline-element-title'>
-            Frontend Engineer @ Cognizant
+            Software Engineer @ Cognizant
           </h3>
           <h4 className='vertical-timeline-element-subtitle'></h4>
 
           <p className='vertical-timeline-element-details'>
-            {WORK_EXP_HERBALIFE.split('◦').map((line) => {
+            {WORK_EXP_COGNIZANT.split('•').map((line) => {
               return (
                 <span key={line} style={{ display: 'block' }}>
-                  {line}
+                  🔵 {line}
                 </span>
               );
             })}
           </p>
         </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className='vertical-timeline-element'
+          date='Jan 2019 - Apr 2019'
+          dateClassName='date-style'
+          iconStyle={{
+            background: '#ae944f',
+            color: '#fff',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+          icon={<img src={workIcon} style={{ height: '3.2rem' }} />}
+        >
+          <h3 className='vertical-timeline-element-title'>
+            UI Intern @ Cognizant
+          </h3>
+          <h4 className='vertical-timeline-element-subtitle'></h4>
 
+          <p className='vertical-timeline-element-details'>
+            {WORK_EXP_INTERN.split('•').map((line) => {
+              return (
+                <span key={line} style={{ display: 'block' }}>
+                  🔵 {line}
+                </span>
+              );
+            })}
+          </p>
+        </VerticalTimelineElement>
         <VerticalTimelineElement
           iconStyle={{
             background: '#ae944f',
