@@ -40,16 +40,18 @@ const Skills = () => {
         <img src={Docker} alt='Docker' />
         <img src={AWS} alt='AWS' />
       </div>
-      {SkillSection.map((item) => {
-        return (
-          <div className='technologies'>
-            <p className='technologies__type'>{item.heading}</p>
-            <p className='technologies__desc'>
-              <img src={Check} /> {item.description}
-            </p>
-          </div>
-        );
-      })}
+      <div className='technologies'>
+        {SkillSection.map((item) => {
+          return (
+            <>
+              <p className='technologies__type'>{item.heading}</p>
+              <p className='technologies__desc'>
+                <img src={Check} /> {item.description}
+              </p>
+            </>
+          );
+        })}
+      </div>
     </div>
   );
 };

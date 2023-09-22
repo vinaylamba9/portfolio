@@ -49,7 +49,7 @@ const Header = () => {
       </a>
       <div className='heading'>
         <h1 className='main-heading'>Vinay Kumar</h1>
-        <h2 className='sub-heading'>Full stack engineer</h2>
+        <h2 className='sub-heading'>software engineer</h2>
         <a onClick={scrollToProjects} className='action-button'>
           See Projects
         </a>
