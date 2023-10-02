@@ -23,7 +23,7 @@ export const COURSES = [
 
 export const SkillSection = [
   {
-    heading: 'Programming',
+    heading: 'Programming ⌨️',
     description: 'HTML5, CSS3, C++, Java, JavaScript, Python, TypeScript',
   },
   {

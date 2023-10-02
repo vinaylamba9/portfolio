@@ -76,7 +76,7 @@
     flex-direction: column;
     position: relative;
     @media screen and (max-width: 767px) {
-      height: 40dvh;
+      height: fit-content;
     }
     .about__me--card-header {
       display: flex;
