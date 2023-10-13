@@ -25,7 +25,12 @@ const Projects = () => {
                 Video streaming platform to watch YouTube videos together in
                 rooms
               </h4>
-              <Button buttonText={'Demo'} />
+              <Button
+                onClickHandler={() => {
+                  window.open('https://vsync.vercel.app/', '_blank');
+                }}
+                buttonText={'Demo'}
+              />
             </div>
           </div>
         </div>
@@ -50,7 +55,12 @@ const Projects = () => {
                 Breeze is the ultimate messaging app (a PWA) with tons of
                 features and mesmerizing UI.
               </h4>
-              <Button buttonText={'Demo'} />
+              <Button
+                onClickHandler={() => {
+                  window.open('https://breezee.vercel.app/login', '_blank');
+                }}
+                buttonText={'Demo'}
+              />
             </div>
           </div>
         </div>
@@ -76,7 +86,15 @@ const Projects = () => {
                 A full stack web for seamless timesheet management, including
                 submission, approval flow, and report retrieval
               </h4>
-              <Button buttonText={'Demo'} />
+              <Button
+                onClickHandler={() => {
+                  window.open(
+                    'http://gseweb.gse.buffalo.edu:3000/signup',
+                    '_blank'
+                  );
+                }}
+                buttonText={'Demo'}
+              />
             </div>
           </div>
         </div>
