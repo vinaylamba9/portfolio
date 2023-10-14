@@ -18,8 +18,8 @@ const Header = () => {
         aria-label='View source on GitHub'
       >
         <svg
-          width='90'
-          height='90'
+          width='70'
+          height='70'
           viewBox='0 0 250 250'
           style={{
             fill: 'rgb(0, 0, 0)',

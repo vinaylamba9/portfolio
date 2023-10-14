@@ -10,6 +10,9 @@ import workIcon from './assets/images/work1.png';
 import hourGlass from './assets/images/hourglass32.png';
 import {
   COURSES,
+  CTS_INTERN_TECH,
+  CTS_TECH,
+  HERBALIFE_TECH,
   WORK_EXP_COGNIZANT,
   WORK_EXP_HERBALIFE,
   WORK_EXP_INTERN,
@@ -67,7 +70,14 @@ const Experience = () => {
             Software Engineer II @ Herbalife
           </h3>
           <h4 className='vertical-timeline-element-subtitle'></h4>
-
+          <p
+            style={{ marginTop: '5px', marginBottom: '-10px' }}
+            className='vertical-timeline-element-details highlight-container'
+          >
+            {HERBALIFE_TECH.map((tech, index) => (
+              <HighLight key={index} course={tech} />
+            ))}
+          </p>
           <p className='vertical-timeline-element-details'>
             {WORK_EXP_HERBALIFE.split('•').map((line) => {
               return (
@@ -96,7 +106,14 @@ const Experience = () => {
             Software Engineer @ Cognizant
           </h3>
           <h4 className='vertical-timeline-element-subtitle'></h4>
-
+          <p
+            style={{ marginTop: '5px', marginBottom: '-10px' }}
+            className='vertical-timeline-element-details highlight-container'
+          >
+            {CTS_TECH.map((tech, index) => (
+              <HighLight key={index} course={tech} />
+            ))}
+          </p>
           <p className='vertical-timeline-element-details'>
             {WORK_EXP_COGNIZANT.split('•').map((line) => {
               return (
@@ -124,7 +141,14 @@ const Experience = () => {
             UI Intern @ Cognizant
           </h3>
           <h4 className='vertical-timeline-element-subtitle'></h4>
-
+          <p
+            style={{ marginTop: '5px', marginBottom: '-10px' }}
+            className='vertical-timeline-element-details highlight-container'
+          >
+            {CTS_INTERN_TECH.map((tech, index) => (
+              <HighLight key={index} course={tech} />
+            ))}
+          </p>
           <p className='vertical-timeline-element-details'>
             {WORK_EXP_INTERN.split('•').map((line) => {
               return (

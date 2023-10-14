@@ -21,6 +21,17 @@ export const COURSES = [
   'Pattern Recognition',
 ];
 
+export const HERBALIFE_TECH = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'GraphQL',
+  'Jest',
+];
+export const CTS_TECH = ['React', 'Java', 'Spring Boot', 'TypeScript'];
+export const CTS_INTERN_TECH = ['Java', 'JavaScript', 'REST APIs'];
+
 export const SkillSection = [
   {
     heading: 'Programming ⌨️',
