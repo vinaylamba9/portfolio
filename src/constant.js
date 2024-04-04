@@ -1,15 +1,19 @@
 export const EDUCATION_DETAILS = 'Pattern Recognition, Machine Learning';
-export const WORK_EXP_HERBALIFE = `Led and built a highly scalable and responsive e-commerce platform utilizing React, serving over 4.5 million MAUs.
-•Created dynamic, modular components using React and JSX, resulting in a 30% decrease in development time and increased code reusability by 35%.
-•Migrated codebase to functional based components, improved testability and web app performance by 30%. 
-•Applied TDD approach, written 500+ tests and improved test coverage to 95% utilizing Jest and react-testing-library.
+export const WORK_EXP_HERBALIFE = `Led and built a highly scalable and performant e-commerce platform using React, achieving loads time under 2 
+seconds and a lighthouse score of 97, serving over 4.5 million MAUs.
+•Reduced development time by 25% and improved code reusability by 35% by modular and reusable components.
+•Achieved a 30% improvement in web app performance, improved testing by migrating to functional components. 
+•Applied TDD approach, wrote 500+ tests and increased test coverage to 95% utilizing Jest and react-testing-library.
 `;
-export const WORK_EXP_COGNIZANT = `Developed a config-driven progressive web app (PWA), executed Contentful CMS integration, streamlining content updates and reduced time for promotions by 50%, resulted in an increase of 10+ millions USD in sales.
+export const WORK_EXP_COGNIZANT = `Engineered a config-driven progressive web app (PWA), with Contentful CMS integration, streamlining content 
+updates and reduced time for promotions by 50%, driving a $1M+ increase in sales.
 •Optimized legacy code, accelerated front-end compile time by 20%, integrated Redux, Redux-saga, React-Router, TypeScript, Cypress for E2E testing, ended in saving up to 1 hour of developer’s time every day.
 •Designed, developed and integrated 40+ REST APIs with application, utilizing Spring Boot and Java on backend. 
-•Performed continuous performance optimizations, conducted thorough load testing, achieving a 99.9% of uptime.
+•Implemented advanced caching and offline functionality leveraging, resulting a 90% increase in user sessions during
+network disruptions.
 `;
-export const WORK_EXP_INTERN = `Collaborated with a team of 8 people to build SPA, experienced agile and scrum working methodologies.
+export const WORK_EXP_INTERN = `Contributed to a collaborative team effort in building a Single Page web App (SPA), gaining experience in agile and 
+scrum methodologies.
 •Gained experience to enterprise-grade software coding, produced pixel-perfect UI screens from Figma wireframes. `;
 export const COURSES = [
   'Data Intensive Computing',
@@ -22,15 +26,15 @@ export const COURSES = [
 ];
 
 export const HERBALIFE_TECH = [
-  'HTML',
-  'CSS',
-  'JavaScript',
   'React',
+  'JavaScript',
+  'TypeScript',
+  'HTML/CSS',
   'GraphQL',
   'Jest',
 ];
-export const CTS_TECH = ['React', 'Java', 'Spring Boot', 'TypeScript'];
-export const CTS_INTERN_TECH = ['Java', 'JavaScript', 'REST APIs'];
+export const CTS_TECH = ['React', 'Java', 'Spring Boot', 'TypeScript', 'Hibernate ORM', 'PostgreSQL', 'REST APIs', 'Maven', 'TDD'];
+export const CTS_INTERN_TECH = ['Java', 'JavaScript', 'React', 'Single Page Apps'];
 
 export const SkillSection = [
   {

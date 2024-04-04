@@ -79,13 +79,13 @@ const Experience = () => {
             ))}
           </p>
           <p className='vertical-timeline-element-details'>
-            {WORK_EXP_HERBALIFE.split('•').map((line) => {
+            {/* {WORK_EXP_HERBALIFE.split('•').map((line) => {
               return (
                 <span key={line} style={{ display: 'block' }}>
                   🔵 {line}
                 </span>
               );
-            })}
+            })} */}
           </p>
         </VerticalTimelineElement>
 
@@ -115,13 +115,13 @@ const Experience = () => {
             ))}
           </p>
           <p className='vertical-timeline-element-details'>
-            {WORK_EXP_COGNIZANT.split('•').map((line) => {
+            {/* {WORK_EXP_COGNIZANT.split('•').map((line) => {
               return (
                 <span key={line} style={{ display: 'block' }}>
                   🔵 {line}
                 </span>
               );
-            })}
+            })} */}
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -150,13 +150,13 @@ const Experience = () => {
             ))}
           </p>
           <p className='vertical-timeline-element-details'>
-            {WORK_EXP_INTERN.split('•').map((line) => {
+            {/* {WORK_EXP_INTERN.split('•').map((line) => {
               return (
                 <span key={line} style={{ display: 'block' }}>
                   🔵 {line}
                 </span>
               );
-            })}
+            })} */}
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
